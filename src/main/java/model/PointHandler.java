@@ -2,7 +2,7 @@ package model;
 
 import exceptions.InvalidValueException;
 
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 
 import static java.lang.Math.pow;
 import static java.lang.System.nanoTime;
@@ -25,7 +25,7 @@ public class PointHandler {
         return Hit.builder().xVal(pointData.getPoint().getXVal())
                 .yVal(pointData.getPoint().getYVal())
                 .rVal(pointData.getRVal())
-                .currentTime(ZonedDateTime.now().minusMinutes(pointData.getTimezone()).toLocalDateTime())
+                .currentTime(LocalDateTime.now().minusMinutes(pointData.getTimezone()))
                 .isHit(hit)
                 .executionTime(executionTime / 1000)
                 .build();

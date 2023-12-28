@@ -98,6 +98,6 @@ public class AreaCheckServlet extends HttpServlet {
     }
 
     private String formatLocalDateTime(LocalDateTime localDateTime){
-        return localDateTime.format(DateTimeFormatter.ofPattern("HH:mm:ss", Locale.US));
+        return localDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss", Locale.ROOT));
     }
 }
