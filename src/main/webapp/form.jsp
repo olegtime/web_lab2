@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Web 2</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
